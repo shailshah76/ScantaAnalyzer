@@ -17,7 +17,7 @@ function uploadFiles(req, res) {
     console.log(req.body);
     console.log(req.file);
     // res.json({ message: "Successfully uploaded files" });
-    res.send(fileParser(req.file.path));
+    res.json(fileParser(req.file.path));
 
 }
 
